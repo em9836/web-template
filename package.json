@@ -1,0 +1,25 @@
+{
+    "name": "project-name",
+    "description": "Description",
+    "version": "0.0.0",
+    "main": "src/index.js",
+    "displayName": "Project Name",
+
+    "author": {
+        "email": "author@email.dom",
+        "name": "author",
+        "url": "https://www.author.dom/"
+    },
+    "contributors": [],
+    "scripts": {
+        "build": "node scripts/production.js",
+        "release": "node scripts/release.js",
+        "start": "node scripts/development.js",
+        "test": "node test/index.js"
+    },
+    "dependencies": {
+
+    },
+    "devDependencies": {},
+    "config": {}
+}

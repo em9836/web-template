@@ -1,0 +1,35 @@
+# configurations documentation: https://docs.gitlab.com/ee/ci/yaml/
+variables:
+  BUILD_PATH: $CI_PROJECT_DIR/build
+
+stages: 
+  - build
+  - test
+  - release
+  - deploy
+
+# jobs here
+build_job:
+  stage: build
+  script:
+    - npm i
+    - npm run build
+  artifacts:
+    untracked: false
+    when: on_success
+    access: all
+    expire_in: "30 days"
+    paths:
+      - $BUILD_PATH
+test_job:
+  stage: test
+  script:
+    - npm i
+    - npm test
+deploy_job:
+  stage: deploy
+
+  dependencies:
+    - build_job
+  script:
+    - npm 

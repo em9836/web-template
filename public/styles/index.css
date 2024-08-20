@@ -1,0 +1,50 @@
+/*Imports*/
+/*fonts*/
+
+/*Variables*/
+:root {
+    --background: #000000;
+}
+
+/*Reset Styles*/
+html {
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*body and page container*/
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer section*/
+
+/*  form styles */
+
+/* audio styles */
+/* table styles */
+
+/* Image styles */
+
+/*  Media Query styles */
+@media only screen and (max-width: 600px) {
+    body {
+        
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "short_name": "name",
+    "name": "Project Name",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src":"",
+            "sizes": ["1"]
+        }
+    ]
+}
